@@ -5,16 +5,48 @@
     <title>С Днем Рождения Николай Кирш @xboston</title>
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <link href="css/bootstrap.min.css" rel="stylesheet" media="screen">
+    <script src="http://code.jquery.com/jquery-1.11.0.min.js"></script>
+    <script src="js/bootstrap.min.js"></script>
 </head>
 <body>
+    <div class="modal fade" id="happy" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    Спасибо Николай будет рад )
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-primary">Be happy</button>
+                </div>
+            </div>
+        </div>
+    </div>
+    <div class="modal fade" id="love" tabindex="-1" role="dialog" aria-labelledby="myModalLabel" aria-hidden="true">
+        <div class="modal-dialog">
+            <div class="modal-content">
+                <div class="modal-header">
+                    <button type="button" class="close" data-dismiss="modal"><span aria-hidden="true">&times;</span><span class="sr-only">Close</span></button>
+                </div>
+                <div class="modal-body">
+                    Спасибо Николай будет рад )
+                </div>
+                <div class="modal-footer">
+                    <button type="button" class="btn btn-default" data-dismiss="modal">Love him :)</button>
+                </div>
+            </div>
+        </div>
+    </div>
     <div class="container">
         <div class="row">
             <div class="col-sm-offset-2 col-xs-12 col-md-8">
-                <h2>С Днем Рождения Хворост :3</h2>
+                <h2 style="text-align: center;">С Днем Рождения Хворост :3</h2>
                 <img src="c_7503fb08bd7d011da975084c11664a07.jpg" width="100%">
                 <div class="well" style="max-width: 100%; margin: 20px auto;">
-                    <button type="button" class="btn btn-large btn-block btn-primary">Be Happy my friend :)</button>
-                    <button type="button" class="btn btn-large btn-block">Love you <3</button>
+                    <button type="button" class="btn btn-large btn-block btn-primary" onclick="return $('#happy').modal('show');">Be Happy my friend :)</button>
+                    <button type="button" class="btn btn-large btn-block"  onclick="return $('#love').modal('show');">Love you <3</button>
                 </div>
             </div>
         </div>
